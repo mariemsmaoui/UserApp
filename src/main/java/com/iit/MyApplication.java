@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 
 @EntityScan("tn.iit.entity")
-@ComponentScan("com.iit") // Ajoutez cette ligne si nécessaire
+@ComponentScan({"com.iit", "tn.iit"})
 
 public class MyApplication {
 
