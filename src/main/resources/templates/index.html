@@ -2,16 +2,56 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Welcome to My Application</title>
-	<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to My Application</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <style>
+        body {
+            padding-top: 5rem;
+        }
+
+        .container-fluid {
+            padding: 3rem 1.5rem;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .h2 {
+            color: #6c757d;
+        }
+
+        .h2:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="container-fluid text-center">
-		<h1>Welcome to my application</h1>
-		<a class="h2" th:href="@{/users}">Manage Users</a>
-	</div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Your App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/users}">Manage Users</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <h1>Welcome to my application</h1>
+        <a class="h2" th:href="@{/users}">Manage Users</a>
+    </div>
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 </body>
 
 </html>

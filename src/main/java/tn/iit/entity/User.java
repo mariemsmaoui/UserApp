@@ -44,11 +44,11 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getFirsttName() {
+	public String getFirstName() {
 		return firstName;
 	}
-	public void setFirsttName(String firsttName) {
-		this.firstName= firsttName;
+	public void setFirstName(String firstName) {
+		this.firstName= firstName;
 	}
 	public String getLastName() {
 		return lastName;
