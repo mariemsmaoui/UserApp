@@ -79,8 +79,7 @@
 			border: 1px solid #f44336;
 		}
 
-		.button-edit:hover
-		{
+		.button-edit:hover {
 			background-color: #45a049;
 			/* Darker green color on hover, you can change this */
 		}
@@ -97,8 +96,9 @@
 			<a class="h3" th:href="@{/users/new}">Add New User</a>
 		</div>
 
-		
-
+		<div th:if="${message}" class="alert alert-success text-center">
+			[[${message}]]
+		</div>
 		<div>
 			<table>
 				<thead class="thead-dark">
@@ -108,6 +108,7 @@
 						<th>E-mail</th>
 						<th>First Name</th>
 						<th>Last Name</th>
+						<th>Enabled</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -119,6 +120,8 @@
 							<td>[[${user.email}]]</td>
 							<td>[[${user.firstName}]]</td>
 							<td>[[${user.lastName}]]</td>
+							<th>[[${user.Enabled}]]</th>
+
 							<td>
 								<!-- Edit and delete actions for each user -->
 								<a class="button-edit" th:href="@{'/users/edit/' + ${user.id}}">Edit</a>
