@@ -1,4 +1,4 @@
-package com.iit.controller;
+package tn.iit.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

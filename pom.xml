@@ -67,6 +67,17 @@
 			<artifactId>FirstSpringApp</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!--dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency-->
+	<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
+
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.0.0</version>
+</dependency>
 	</dependencies>
 
 	<build>
